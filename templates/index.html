@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/stilo.css">
+    <script src="../static/app.js" defer></script>
+    <title>Bienvenido a la paguina de recoleccion de datos</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">SIP</div>
+        <ul class="nav-links">
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#servicios">SERVICIOS</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+            <li><a href="#acerca">ACERCA DE NOSOTROS</a></li>
+        </ul>
+        <button class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <header id="inicio" class="hero-section">
+        <h1>Bienvenido a Nuestra Página Web de recoleccion de datos </h1>
+        <p>Descubre nuestros servicios y más.</p>
+        <a href="#servicios" class="btn-primary">Descubrir Más</a>
+    </header>
+
+    <main>
+        <section id="servicios" class="cards-container">
+            <h2>Nuestros Servicios</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>INFORMACION</h3>
+                    <a href="informacion.html"> Mas informacion </a>
+                    </p>
+            
+                </div>
+                <div class="card">
+                    <h3>SABER MAS DE NOSOTROS</h3>
+                    <a href="saber mas.html">Saber mas </a>
+                </p>
+                </div>
+                <div class="card">
+                    <h3>UNETE A NOSOTROS</h3>
+                    <a href="contacto"> Unite a Nosotros </a>
+                    </p>
+                </div>
+            </div>
+
+
+        </section>
+        <section id="contacto" class="contact-section">
+            <h2>Contacto</h2>
+            <form id="contact-form" method="POST" action="/send_email">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="correo" placeholder="Correo Electrónico" required>
+                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        
+       <!-- Contenedor para mensajes flash -->
+       <div id="flash-messages" class="flash-messages"></div>
+       
+        <section id="acerca" class="about-section">
+            <h2>Acerca de Nosotros</h2>
+            <p>Somos una empresa dedicada a brindar las mejores soluciones para ti.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
